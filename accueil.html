@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cyber Prince - Connecté avec élégance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-image: url('photo-professionnelle.jpg'); /* Remplace par ton image */
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    header h1 {
+      position: relative;
+      font-size: 3em;
+      z-index: 1;
+    }
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100px;
+      z-index: 2;
+    }
+    .services {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service-item {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: white;
+    }
+    .btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #005fa3;
+}/* Style général du menu */
+nav {
+  background-color: #1a1a1a;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #333;
+}
+
+/* Sous-menu */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li a {
+  padding: 10px 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav ul li ul {
+    position: static;
+  }
+
+  nav ul li:hover ul {
+    display: none;
+  }
+
+  nav ul li:focus-within ul {
+    display: block;
+  }
+}
+
+  </style>
+</head>
+<body>
+<nav>
+  <ul style="list-style: none; display: flex; justify-content: space-around; background-color: #1a1a1a; padding: 15px;">
+    <li><a href="accueil.html" style="color: white; text-decoration: none;">Accueil</a></li>
+    <li>
+      <a href="#" style="color: white; text-decoration: none;">Nos Services ▾</a>
+      <ul style="list-style: none; position: absolute; background-color: #333; padding: 10px; margin-top: 10px;">
+        <li><a href="internet.html" style="color: white; text-decoration: none;">Internet & Wi-Fi</a></li>
+        <li><a href="gamin.html" style="color: white; text-decoration: none;">Espace Gaming</a></li>
+        <li><a href="impression.html" style="color: white; text-decoration: none;">Impression & Photocopie</a></li>
+        <li><a href="retouche.html" style="color: white; text-decoration: none;">Retouche Photo & Design</a></li>
+        <li><a href="education.html" style="color: white; text-decoration: none;">Assistance Éducative</a></li>
+        <li><a href="aide.html" style="color: white; text-decoration: none;">Aide Numérique</a></li>
+      </ul>
+    </li> 
+    <li><a href="a_propos.html" style="color: white; text-decoration: none;">À propos</a></li>
+    <li><a href="potfolio.html" style="color: white; text-decoration: none;">Portfolio</a></li>
+    <li><a href="tarifs.html" style="color: white; text-decoration: none;">Tarifs</a></li>
+    <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+    <li><a href="blog.html" style="color: white; text-decoration: none;">Blog</a></li>
+    <li><a href="printer.html" style="color: white; text-decoration: none;">Impression & scan </a></li>
+    <li><a href="#" style="color: white; text-decoration: none;">Langue ▾</a>
+      <ul style="list-style: none; position: absolute; background-color: #333; padding: 10px; margin-top: 10px;">
+        <li><a href="?lang=fr" style="color: white; text-decoration: none;">Français 🇫🇷</a></li>
+        <li><a href="?lang=en" style="color: white; text-decoration: none;">English 🇬🇧</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+  
+    <div class="slider">
+  <img src="d:\html\call.jpg" class="slide active">
+  <img src="d:\html\OIP.jpg" class="slide">
+  <img src="d:\html\ps 2025.webp" class="slide">
+  <img src="g:\hi\Copilot_20250915_190723.png" class="slide active">
+  <img src="g:\hi\Copilot_20250915_202758.png" class="slide">
+  <img src="g:\cyn.png" class="slide">
+</div>
+
+<style>
+.slider {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.slide.active {
+  opacity: 1;
+}
+</style>
+
+<script>
+let slides = document.querySelectorAll('.slide');
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove('active');
+  index = (index + 1) % slides.length;
+  slides[index].classList.add('active');
+}, 3000); // Change toutes les 3 secondes
+</script>
+
+  </header>
+
+  <section class="services">
+    <h2>Nos services</h2>
+    <div class="service-list">
+      <div class="service-item">💻 Accès Internet Haut Débit</div>
+      <div class="service-item">🎮 Espace Gaming</div>
+      <div class="service-item">🖨️ Impression & Scan</div>
+      <div class="service-item">📷 Retouches Photo & CV</div>
+      <div class="service-item">📞 Assistance Numérique</div>
+      <div class="service-item">🎓 Support Éducatif & Recherche</div>
+      <a href="https://wa.me/243833693299" target="_blank" class="btn">Réserver maintenant</a>
+      <a href="gamin.html" class="btn">Découvrir l’espace Gaming</a>
+      <a href="service.html" class="btn">Réserver ou nous contacter</a>
+      <a href="internet.html" class="btn">Assistance Internet</a>
+      <a href="impression.html" class="btn">Impression & Scan</a>
+      <a href="retouche.html" class="btn">Retouche Photo & CV</a>
+      <a href="assistance.html" class="btn">Assistance Numérique</a>
+      <a href="education.html" class="btn">Support Éducatif</a>
+      <a href="contact.html" class="btn">Nous contacter</a>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="tarif.html">Tarifs</a></li>
+      <li><a href="printer.html">Impression & Scan</a></li>
+      <li><a href="a_propos.html">À propos</a></li>
+      <li><a href="potfolio.html">Portfolio</a></li>
+      <li><a href="aide.html">Aide Numérique</a></li>
+      <li><a href="accueil.html">Accueil</a></li>
+
+    </div>
+    
+  </section>
+</form>
+  
+
+  <footer>
+    © 2025 Cyber Prince - Kinshasa | Contact : +243 833693299
+  </footer>
+
+</body>
+</html>
